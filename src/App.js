@@ -7,7 +7,7 @@ import songs from './mockResponse';
 
 function App() {
   const [results, setResults] = useState([]);
-  const [tracks, setTracks] = useState([]);
+  const [selectedTracks, setSelectedTracks] = useState([]);
 
   function handleNewResults(event) {
     event.preventDefault();
@@ -20,8 +20,8 @@ function App() {
         <h1>Jammmin</h1>
       </header>
       <SearchBar handleNewResults={handleNewResults} />
-      <SearchResults results={results} tracks={tracks} setTracks={setTracks} />
-      <Playlist />
+      <SearchResults results={results} setSelectedTracks={setSelectedTracks} />
+      <Playlist selectedTracks={selectedTracks} />
     </div>
   );
 }

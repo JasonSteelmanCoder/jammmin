@@ -1,0 +1,5 @@
+Minor: 
+    Put add symbol on results, and minus symbol on playlist tracks
+    handle clicks on playlist items
+    prevent tracks from being added twice to playlist
+    make tracks removable from playlist
