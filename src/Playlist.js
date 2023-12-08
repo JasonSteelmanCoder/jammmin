@@ -11,7 +11,7 @@ function Playlist({ selectedTracks }) {
     return (
         <div>
             <input type='text' value={playlistName} onChange={handleChange}></input>
-            <ul>
+            <ul className='playlist-list'>
                 {selectedTracks.map((item) => <>{item}</>)}
             </ul>
             <SaveButton />

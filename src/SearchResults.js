@@ -6,7 +6,7 @@ function SearchResults({ results, selectedTracks, setSelectedTracks }) {
     return(
         <div>
             <h2>Results</h2>
-            <ul>
+            <ul className='search-results-list'>
                 {results.map((item, index) => (
                     <Track 
                         results={results}
