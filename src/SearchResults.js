@@ -1,7 +1,7 @@
 import React from 'react';
 import Track from './Track';
 
-function SearchResults({ results, setSelectedTracks }) {
+function SearchResults({ results, selectedTracks, setSelectedTracks }) {
 
     return(
         <div>
@@ -13,8 +13,10 @@ function SearchResults({ results, setSelectedTracks }) {
                         result={Object.keys(item)}
                         artist={item[Object.keys(item)].artist}
                         album={item[Object.keys(item)].album}
+                        selectedTracks={selectedTracks}
                         setSelectedTracks={setSelectedTracks}
                         index={index}
+                        key={index}
                     />
                 ))}
             </ul>

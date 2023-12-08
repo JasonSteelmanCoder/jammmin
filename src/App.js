@@ -21,7 +21,7 @@ function App() {
       </header>
       <SearchBar handleNewResults={handleNewResults} />
       <div className='lists-container'>
-        <SearchResults results={results} setSelectedTracks={setSelectedTracks} />
+        <SearchResults results={results} selectedTracks={selectedTracks} setSelectedTracks={setSelectedTracks} />
         <Playlist selectedTracks={selectedTracks} />
       </div>
     </div>

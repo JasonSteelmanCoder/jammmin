@@ -1,5 +1,4 @@
 Minor: 
-    prevent tracks from being duplicated in playlist
     handle clicks on playlist items
     Put add symbol on results, and minus symbol on playlist tracks
     make tracks removable from playlist
