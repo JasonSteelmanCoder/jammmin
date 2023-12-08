@@ -4,7 +4,7 @@ import Track from './Track';
 function SearchResults({ results, setSelectedTracks }) {
 
     return(
-        <>
+        <div>
             <h2>Results</h2>
             <ul>
                 {results.map((item, index) => (
@@ -18,7 +18,7 @@ function SearchResults({ results, setSelectedTracks }) {
                     />
                 ))}
             </ul>
-        </>
+        </div>
     )
 }
 

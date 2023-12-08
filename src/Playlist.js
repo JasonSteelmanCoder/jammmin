@@ -12,7 +12,7 @@ function Playlist({ selectedTracks }) {
         <div>
             <input type='text' value={playlistName} onChange={handleChange}></input>
             <ul>
-                {selectedTracks.map((item, index) => <li key={index}>{item}</li>)}
+                {selectedTracks.map((item) => <>{item}</>)}
             </ul>
             <SaveButton />
         </div>

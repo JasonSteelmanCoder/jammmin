@@ -20,8 +20,10 @@ function App() {
         <h1>Jammmin</h1>
       </header>
       <SearchBar handleNewResults={handleNewResults} />
-      <SearchResults results={results} setSelectedTracks={setSelectedTracks} />
-      <Playlist selectedTracks={selectedTracks} />
+      <div className='lists-container'>
+        <SearchResults results={results} setSelectedTracks={setSelectedTracks} />
+        <Playlist selectedTracks={selectedTracks} />
+      </div>
     </div>
   );
 }

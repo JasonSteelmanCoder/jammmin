@@ -1,4 +1,5 @@
 import React from 'react';
+import './Track.css';
 
 function Track({ results, result, artist, album, setSelectedTracks, index }) {
 
