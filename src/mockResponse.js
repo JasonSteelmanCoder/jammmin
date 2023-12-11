@@ -1,21 +1,25 @@
 const songs = [
 
-    {"Glycerine": {
+    {"91": {
+        "title": "Glycerine",
         "artist": "Bush",
         "album": "Sixteen Stone" 
     }},
 
-    {"Everlong": {
+    {"92": {
+        "title": "Everlong",
         "artist": "The Foo Fighters",
         "album": "The Color and the Shape" 
     }},
 
-    {"Jumper": {
+    {"93": {
+        "title": "Jumper",
         "artist": "Third Eye Blind",
         "album": "Third Eye Blind" 
     }},
 
-    {"Iris": {
+    {"94": {
+        "title": "Iris",
         "artist": "Goo Goo Dolls",
         "album": "City of Angels" 
     }}

@@ -7,16 +7,16 @@ function SearchResults({ results, selectedTracks, setSelectedTracks }) {
         <div>
             <h2>Results</h2>
             <ul className='search-results-list'>
-                {results.map((item, index) => (
+                {results.map((item) => (
                     <Track 
                         results={results}
-                        result={Object.keys(item)}
+                        result={item[Object.keys(item)].title}
                         artist={item[Object.keys(item)].artist}
                         album={item[Object.keys(item)].album}
                         selectedTracks={selectedTracks}
                         setSelectedTracks={setSelectedTracks}
-                        index={index}
-                        key={index}
+                        resultId={Object.keys(item)[0]}
+                        key={Object.keys(item)}
                     />
                 ))}
             </ul>

@@ -22,7 +22,7 @@ function App() {
       <SearchBar handleNewResults={handleNewResults} />
       <div className='lists-container'>
         <SearchResults results={results} selectedTracks={selectedTracks} setSelectedTracks={setSelectedTracks} />
-        <Playlist selectedTracks={selectedTracks} />
+        <Playlist selectedTracks={selectedTracks} setSelectedTracks={setSelectedTracks} results={results} />
       </div>
     </div>
   );
