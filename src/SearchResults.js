@@ -17,6 +17,7 @@ function SearchResults({ results, selectedTracks, setSelectedTracks }) {
                         setSelectedTracks={setSelectedTracks}
                         resultId={Object.keys(item)[0]}
                         key={Object.keys(item)}
+                        list="search-results"
                     />
                 ))}
             </ul>

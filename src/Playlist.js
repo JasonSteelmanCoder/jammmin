@@ -26,6 +26,7 @@ function Playlist({ selectedTracks, setSelectedTracks, results }) {
                             setSelectedTracks={setSelectedTracks}
                             resultId={resultId}
                             key={resultId} 
+                            list="playlist"
                         />
                     })
                 }
