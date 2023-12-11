@@ -9,7 +9,7 @@ function Track({ result, artist, album, selectedTracks, setSelectedTracks, resul
                 setSelectedTracks(prev => [...prev, resultId]);
             }
         } else {        //the clicked track is in playlist
-            setSelectedTracks(prev => prev.filter((track) => Object.keys(track) === resultId))
+            setSelectedTracks(prev => prev.filter((track) => track !== resultId))
         }
     };
 
