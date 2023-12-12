@@ -1,11 +1,10 @@
 import React from 'react';
 
 function SearchButton() {
+
     return (
         <button 
-            type='submit' 
-            formMethod='GET' 
-            formAction='./mockResponse.js'
+            type='submit'
         >
             Search
         </button>

@@ -10,13 +10,13 @@ function SearchResults({ results, selectedTracks, setSelectedTracks }) {
                 {results.map((item) => (
                     <Track 
                         results={results}
-                        result={item[Object.keys(item)].title}
-                        artist={item[Object.keys(item)].artist}
-                        album={item[Object.keys(item)].album}
+                        result={item["name"]}
+                        artist={item["artists"][0]["name"]}
+                        album={item["album"]["name"]}
                         selectedTracks={selectedTracks}
                         setSelectedTracks={setSelectedTracks}
-                        resultId={Object.keys(item)[0]}
-                        key={Object.keys(item)}
+                        resultId={item["uri"]}
+                        key={item["uri"]}
                         list="search-results"
                     />
                 ))}

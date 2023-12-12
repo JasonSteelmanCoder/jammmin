@@ -16,12 +16,12 @@ function Playlist({ selectedTracks, setSelectedTracks, results }) {
                 {
                     selectedTracks.map((resultId) => {
                         const selectedTrack = results.find(
-                            (track) => Object.keys(track)[0] === resultId
+                            (track) => track.uri === resultId
                         )
                         return <Track  
-                            result={selectedTrack[resultId]["title"]} 
-                            artist={selectedTrack[resultId]["artist"]} 
-                            album={selectedTrack[resultId]["album"]} 
+                            result={selectedTrack["name"]} 
+                            artist={selectedTrack["artists"][0]["name"]} 
+                            album={selectedTrack["album"]["name"]} 
                             selectedTracks={selectedTracks} 
                             setSelectedTracks={setSelectedTracks}
                             resultId={resultId}
