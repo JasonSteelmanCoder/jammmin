@@ -1,4 +1,7 @@
+Add logic to check if the playlist already exists before adding a new one
+Make an alert or screen change when playlist is successfully uploaded
 Make AuthLink go away once the user is logged in 
+Add "no tracks yet" message to playlist 
 Restyle the search bar
 Put add symbol on results, and minus symbol on playlist tracks
-add more styles
+Add more styles

@@ -31,7 +31,7 @@ function Playlist({ selectedTracks, setSelectedTracks, results }) {
                     })
                 }
             </ul>
-            <SaveButton />
+            <SaveButton selectedTracks={selectedTracks} playlistName={playlistName} />
         </div>
     )
 }

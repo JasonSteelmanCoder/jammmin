@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SearchButton from './SearchButton';
+import Playlist from './Playlist';
 
 function SearchBar({ setResults }) {
 
@@ -38,7 +39,7 @@ function SearchBar({ setResults }) {
             });
 
         } catch (error) {
-            console.error('Error fetching data:', error)
+            console.error('Error searching Spotify:', error)
         }
     };
 

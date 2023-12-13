@@ -4,11 +4,13 @@ function AuthLink() {
 
     const client_id = "2709bf216b7249128432019eaae890fb";
     const redirect_uri = "http://localhost:3000";
+    const scope = "playlist-modify-private";
 
     let url = 'https://accounts.spotify.com/authorize';
     url += '?response_type=token';
     url += '&client_id=' + encodeURIComponent(client_id);
     url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
+    url += '&scope=' + encodeURIComponent(scope);
 
     return (
         <a href={url} >
