@@ -47,7 +47,6 @@ function SaveButton({ selectedTracks, playlistName }) {
             )
             .then((response) => response.json())
             .then((response) => {
-                console.log(response.id);
                 playlistID = response.id;
             })
         } catch (error) {

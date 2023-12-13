@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SaveButton from './SaveButton';
 import Track from './Track';
 
-function Playlist({ selectedTracks, setSelectedTracks, results }) {
+function Playlist({ selectedTracks, setSelectedTracks, results, cumulativeResults }) {
     const [playlistName, setPlaylistName] = useState('Playlist Name');
 
     function handleChange(event) {
@@ -15,13 +15,14 @@ function Playlist({ selectedTracks, setSelectedTracks, results }) {
             <ul className='playlist-list'>
                 {
                     selectedTracks.map((resultId) => {
-                        const selectedTrack = results.find(
-                            (track) => track.uri === resultId
+                        console.log(cumulativeResults);
+                        const selectedTrack = cumulativeResults.find(
+                            (track) => track.props.resultId === resultId
                         )
                         return <Track  
-                            result={selectedTrack["name"]} 
-                            artist={selectedTrack["artists"][0]["name"]} 
-                            album={selectedTrack["album"]["name"]} 
+                            result={selectedTrack.props.result} 
+                            artist={selectedTrack.props.artist} 
+                            album={selectedTrack.props.album} 
                             selectedTracks={selectedTracks} 
                             setSelectedTracks={setSelectedTracks}
                             resultId={resultId}

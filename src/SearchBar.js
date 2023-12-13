@@ -34,7 +34,6 @@ function SearchBar({ setResults }) {
             )
             .then(response => response.json())
             .then(response => {
-                console.log(response.tracks.items);
                 setResults(response.tracks.items);
             });
 
