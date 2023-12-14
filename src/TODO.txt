@@ -1,3 +1,4 @@
+Fix memory efficiency with cumulativeResults
 Write tests
 Add error handling for not signed in, no playlist items, no search term, search doesn't go thru, no playlist name, id query doesn't go thru, playlist not created, tracks not added
 Make AuthLink go away once the user is logged in

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import SearchButton from './SearchButton';
-import Playlist from './Playlist';
 
 function SearchBar({ setResults }) {
 
@@ -23,7 +22,7 @@ function SearchBar({ setResults }) {
             const searchParameters = new URLSearchParams(currentURL);
             const accessToken = searchParameters.get('http://localhost:3000/#access_token');
 
-            const response = await fetch(
+            await fetch(
                 fullQueryURL, 
                 {
                     method: 'GET',

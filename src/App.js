@@ -28,7 +28,7 @@ function App() {
           />
       )))
     ])
-  }, [results]);
+  }, [results, selectedTracks]);
 
   return (
     <div className="App">
