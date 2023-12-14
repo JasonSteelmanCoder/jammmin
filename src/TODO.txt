@@ -1,11 +1,12 @@
 Write tests
 Add error handling for not signed in, no playlist items, no search term, search doesn't go thru, no playlist name, id query doesn't go thru, playlist not created, tracks not added
-Add logic to check if the playlist already exists before adding a new one
+Make AuthLink go away once the user is logged in
+Add logout functionality 
 Make an alert or screen change when playlist is successfully uploaded
-Make AuthLink go away once the user is logged in 
+Add logic to check if the playlist already exists before adding a new one
+Put add symbol on results, and minus symbol on playlist tracks
+
 Add "no tracks yet" message to playlist 
 Restyle the search bar
-Put add symbol on results, and minus symbol on playlist tracks
 Make the page responsive
 Add more styles
-Add logout functionality?
