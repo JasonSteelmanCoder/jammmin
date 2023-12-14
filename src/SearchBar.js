@@ -20,7 +20,7 @@ function SearchBar({ setResults }) {
 
             const currentURL = window.location.href;
             const searchParameters = new URLSearchParams(currentURL);
-            const accessToken = searchParameters.get('http://localhost:3000/#access_token');
+            const accessToken = searchParameters.get(`${process.env.REACT_APP_REDIRECT_URI}/#access_token`);
 
             await fetch(
                 fullQueryURL, 
