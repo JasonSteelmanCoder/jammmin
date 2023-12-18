@@ -5,6 +5,7 @@ function SearchButton() {
     return (
         <button 
             type='submit'
+            data-testid="SearchButton"
         >
             Search
         </button>

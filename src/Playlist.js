@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SaveButton from './SaveButton';
 import Track from './Track';
 
-function Playlist({ selectedTracks, setSelectedTracks, results, cumulativeResults }) {
+function Playlist({ selectedTracks, setSelectedTracks, cumulativeResults }) {
     const [playlistName, setPlaylistName] = useState('Playlist Name');
 
     function handleChange(event) {
@@ -11,7 +11,7 @@ function Playlist({ selectedTracks, setSelectedTracks, results, cumulativeResult
 
     return (
         <div>
-            <input type='text' value={playlistName} onChange={handleChange}></input>
+            <input type='text' value={playlistName} onChange={handleChange} data-testid="playlist-name"></input>
             <ul className='playlist-list'>
                 {
                     selectedTracks.map((resultId) => {

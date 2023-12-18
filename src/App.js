@@ -38,7 +38,7 @@ function App() {
       <AuthLink />
       <SearchBar setResults={setResults} />
       <div className='lists-container'>
-        <SearchResults results={results} selectedTracks={selectedTracks} setSelectedTracks={setSelectedTracks} setCumulativeResults={setCumulativeResults} />
+        <SearchResults results={results} selectedTracks={selectedTracks} setSelectedTracks={setSelectedTracks} setCumulativeResults={setCumulativeResults} data-testid="searchResults" />
         <Playlist selectedTracks={selectedTracks} setSelectedTracks={setSelectedTracks} results={results} cumulativeResults={cumulativeResults} />
       </div>
     </div>

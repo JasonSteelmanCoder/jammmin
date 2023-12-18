@@ -42,12 +42,13 @@ function SearchBar({ setResults }) {
     };
 
     return (
-        <form onSubmit={queryAPI}>
+        <form onSubmit={queryAPI} data-testid="searchForm" >
             <input 
                 type="text"
                 name="userInput" 
                 value={value} 
                 onChange={handleChange} 
+                data-testid="SearchBar"
             />
             <SearchButton />
         </form>
