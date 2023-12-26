@@ -4,7 +4,7 @@ import SearchButton from './SearchButton';
 function SearchBar({ setResults }) {
 
     // The value state stores the current value typed into the search bar
-    const [value, setValue] = useState('Search');
+    const [value, setValue] = useState('');
 
     // Allows the search bar to update when typed in
     function handleChange(event) {
@@ -60,7 +60,7 @@ function SearchBar({ setResults }) {
                 onChange={handleChange} 
                 data-testid="SearchBar"
             />
-            <SearchButton />
+            <SearchButton value={value} />
         </form>
     )
 };

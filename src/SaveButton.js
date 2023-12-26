@@ -63,7 +63,7 @@ function SaveButton({ selectedTracks, playlistName }) {
             tracksToAdd.push(track);
         };
         try {
-            await fetch(
+            const response = await fetch(
                 trackAdderURL,
                 {
                     "method": "POST",
@@ -76,11 +76,14 @@ function SaveButton({ selectedTracks, playlistName }) {
                     })
                 }
             )
+            if (response.ok) {
+                alert("Your tracks have been added to your Spotify account! \nReopen your Spotify app to find the playlist there!")
+            } else {
+                alert("There has been an unspecified error.")
+            }
         } catch (error) {
             console.error('Error adding tracks to playlist!', error)
         }
-
-        alert("Your tracks have been added to your Spotify account! \nReopen your Spotify app to find the playlist there!")
 
     };
 
