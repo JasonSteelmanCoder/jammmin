@@ -80,7 +80,7 @@ function SaveButton({ selectedTracks, playlistName }) {
             console.error('Error adding tracks to playlist!', error)
         }
 
-
+        alert("Your tracks have been added to your Spotify account! \nReopen your Spotify app to find the playlist there!")
 
     };
 
