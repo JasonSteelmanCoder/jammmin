@@ -4,6 +4,7 @@ function SaveButton({ selectedTracks, playlistName }) {
 
     async function savePlaylist() {
 
+        // Call API to get user's username
         const currentURL = window.location.href;
         const searchParameters = new URLSearchParams(currentURL);
         const accessToken = searchParameters.get(`${process.env.REACT_APP_REDIRECT_URI}/#access_token`);
@@ -27,6 +28,7 @@ function SaveButton({ selectedTracks, playlistName }) {
         });
 
 
+        // Make playlist on Spotify with the user's specified name
         const playlistBuilderURL = `https://api.spotify.com/v1/users/${userID}/playlists`;
         let playlistID = ``;
         try {
@@ -54,6 +56,7 @@ function SaveButton({ selectedTracks, playlistName }) {
         };
 
 
+        // Add user's tracks to Spotify playlist
         const trackAdderURL = `https://api.spotify.com/v1/playlists/${playlistID}/tracks`;
         const tracksToAdd = [];
         for (let track of selectedTracks) {

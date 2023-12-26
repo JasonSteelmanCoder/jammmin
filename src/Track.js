@@ -3,12 +3,14 @@ import './Track.css';
 
 function Track({ result, artist, album, selectedTracks, setSelectedTracks, resultId, list }) {
 
+    // Called when a track is clicked in either list
     function handleClick(event) {
+        // if the clicked track is in the search-results column
         if (list === "search-results") {
             if (!selectedTracks.includes(resultId)) {
                 setSelectedTracks(prev => [...prev, resultId]);
             }
-        } else {        //the clicked track is in playlist
+        } else {        // when the clicked track is in playlist
             setSelectedTracks(prev => prev.filter((track) => track !== resultId))
         }
     };

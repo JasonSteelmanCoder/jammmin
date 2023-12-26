@@ -7,10 +7,14 @@ import AuthLink from './AuthLink';
 import Track from './Track';
 
 function App() {
+  // When spotify returns search results, they land in the `results` array
   const [results, setResults] = useState([]);
+  // The `cumulativeResults` array keeps track of previous results so that multiple searches can be added to the same playlist  
   const [cumulativeResults, setCumulativeResults] = useState([]);
+  // The selectedTracks array is used to populate the user's playlist
   const [selectedTracks, setSelectedTracks] = useState([]);
 
+  // Add previous results to cumulativeResults so that the user's playlist can persist through more than one search
   useEffect(() => {
     setCumulativeResults((prev) => [
         ...prev, 

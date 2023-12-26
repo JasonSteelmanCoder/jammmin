@@ -3,8 +3,10 @@ import SaveButton from './SaveButton';
 import Track from './Track';
 
 function Playlist({ selectedTracks, setSelectedTracks, cumulativeResults }) {
+    // playlistName stores the current value typed into the playlist name box
     const [playlistName, setPlaylistName] = useState('Playlist Name');
 
+    // allow the playlist name to update in real time when typed in
     function handleChange(event) {
         setPlaylistName(event.target.value);
     };
