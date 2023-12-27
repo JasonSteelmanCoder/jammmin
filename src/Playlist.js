@@ -4,7 +4,7 @@ import Track from './Track';
 
 function Playlist({ selectedTracks, setSelectedTracks, cumulativeResults }) {
     // playlistName stores the current value typed into the playlist name box
-    const [playlistName, setPlaylistName] = useState('Playlist Name');
+    const [playlistName, setPlaylistName] = useState('My Playlist');
 
     // allow the playlist name to update in real time when typed in
     function handleChange(event) {

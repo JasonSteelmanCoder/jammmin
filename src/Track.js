@@ -16,10 +16,15 @@ function Track({ result, artist, album, selectedTracks, setSelectedTracks, resul
     };
 
     return (
-        <li onClick={handleClick} resultid={resultId} list={list} >
-            <h3>{result}</h3>
-            <span>{artist}: </span>
-            <span>{album}</span>
+        <li resultid={resultId} list={list} >
+            <div>
+                <h3>{result}</h3>
+                <span>{artist}: </span>
+                <span>{album}</span>
+            </div>
+            <div onClick={handleClick} className={list === "search-results" ? 'track-action-button add-track-button' : 'track-action-button exit-track-button'}>
+                {list === "search-results" ? "+" : "x"}
+            </div>
         </li>
     )
 };

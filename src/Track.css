@@ -3,4 +3,25 @@ li {
     border-radius: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
+
+.track-action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.exit-track-button {
+    background-color: pink;
+    font-size: 1.25rem;
+}
+
+.add-track-button {
+    background-color: lightgreen;
+    font-size: 1.5rem;
+}
+
